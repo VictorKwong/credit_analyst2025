@@ -1,95 +1,59 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Head>
+        <title>Credit Analyst</title>
+        <meta name="description" content="Welcome to the Credit Analyst website!" />
+      </Head>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      <div className="container">
+        <div className="header">
+          <h1>Welcome to Credit Analyst Portal</h1>
+          <p>Your trusted source for insights, tools, and best practices in credit risk and compliance.</p>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+        <section>
+          <h2>💼 What is AML (Anti-Money Laundering)?</h2>
+          <p>
+            Anti-Money Laundering (AML) refers to a set of laws, regulations, and procedures designed to prevent criminals from disguising illegally obtained funds as legitimate income.
+          </p>
+        </section>
+
+        <section>
+          <h2>🔍 How Does AML Work?</h2>
+          <ul>
+            <li><strong>Monitoring Transactions:</strong> Banks and financial institutions track unusual or suspicious activities.</li>
+            <li><strong>Customer Due Diligence (CDD):</strong> Verifying customer identity and risk level.</li>
+            <li><strong>Suspicious Activity Reports (SARs):</strong> Filed when transactions raise red flags.</li>
+            <li><strong>KYC (Know Your Customer):</strong> Essential part of onboarding and ongoing monitoring.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>🧠 How Credit Analysts Help Prevent and Detect AML Risks</h2>
+          <ul>
+            <li>Analyze financial statements to spot inconsistencies or irregular flows of funds.</li>
+            <li>Flag unusual loan applications or repayments that don’t match the customer profile.</li>
+            <li>Ensure compliance with KYC (Know Your Customer) and risk assessment protocols.</li>
+            <li>Collaborate with compliance teams to review suspicious patterns.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>⚠️ Common Red Flags for Credit Analysts</h2>
+          <ul>
+            <li>Overpayment on loans or early settlements using unexplained funds.</li>
+            <li>Mismatch between stated income and transaction volume.</li>
+            <li>Multiple small transactions or loan applications from linked accounts.</li>
+          </ul>
+        </section>
+
+        <section style={{ marginTop: '2rem' }}>
+          <a href="/about" className="btn">Learn More About Us</a>
+        </section>
+      </div>
+    </>
+  )
 }
