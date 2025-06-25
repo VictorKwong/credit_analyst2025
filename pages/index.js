@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from '../components/Navbar'
 
 export default function Home() {
   return (
@@ -7,6 +8,8 @@ export default function Home() {
         <title>Credit Analyst</title>
         <meta name="description" content="Welcome to the Credit Analyst website!" />
       </Head>
+
+      <Navbar />
 
       <div className="container">
         <div className="header">
@@ -38,15 +41,6 @@ export default function Home() {
             <li>Flag unusual loan applications or repayments that don’t match the customer profile.</li>
             <li>Ensure compliance with KYC (Know Your Customer) and risk assessment protocols.</li>
             <li>Collaborate with compliance teams to review suspicious patterns.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>⚠️ Common Red Flags for Credit Analysts</h2>
-          <ul>
-            <li>Overpayment on loans or early settlements using unexplained funds.</li>
-            <li>Mismatch between stated income and transaction volume.</li>
-            <li>Multiple small transactions or loan applications from linked accounts.</li>
           </ul>
         </section>
 
