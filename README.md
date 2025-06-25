@@ -3,7 +3,7 @@
 A simple web portal for Credit Analysts to learn about AML (Anti-Money Laundering), red flags, and global country risk profiles — built using [Next.js](https://nextjs.org/).
 
 🔗 **Live Website:**  
-[https://credit-analyst2025-9n6s9g4sk-victorkwongs-projects.vercel.app/](https://credit-analyst2025-9n6s9g4sk-victorkwongs-projects.vercel.app/)
+[https://credit-analyst2025.vercel.app/](https://credit-analyst2025.vercel.app/)
 
 ---
 
